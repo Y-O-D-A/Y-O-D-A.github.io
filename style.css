@@ -1,0 +1,41 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: springgreen;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: 98px;
+    margin-right: 98px;
+    background-color: rgba(0, 255, 127, 0.75)
+}
+
+#buttons {
+    margin-left: auto;
+    margin-right: auto;
+}
