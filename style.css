@@ -25,6 +25,7 @@
     background-color: springgreen;
     font-size: 30px;
     border-radius: 20px;
+
 }
 
 .btn:hover {
@@ -38,4 +39,5 @@
 #buttons {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
