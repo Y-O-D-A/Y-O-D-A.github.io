@@ -14,7 +14,7 @@ function add() {
         alert('AMAZING! YOU GOT TO 1000!')
     }
 
-    if (x >= 10000) {
+    if (x > 10000) {
         alert('You did a very good job of hacking this')
     }
 }
