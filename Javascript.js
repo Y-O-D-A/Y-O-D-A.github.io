@@ -1,4 +1,20 @@
-let x = 0
+if (!localStorage.getItem('x')){
+    localStorage.setItem('x', 0)
+}
+
+let x = localStorage.getItem('x');
+
+document.addEventListener('DOMContentLoaded', function (){
+
+    document.querySelector('h1').innerHTML = x
+
+    document.getElementById('add').onclick = add;
+
+    document.getElementById('reset').onclick = reset;
+
+    document.getElementById('subtract').onclick = subtract;
+
+})
 
 function add() {
 
@@ -17,6 +33,9 @@ function add() {
     if (x > 10000) {
         alert('You did a very good job of hacking this')
     }
+
+    localStorage.setItem('x', x)
+
 }
 
 function subtract() {
@@ -37,12 +56,16 @@ function subtract() {
         alert('You did a very good job of hacking this')
     }
 
+    localStorage.setItem('x', x)
+
 }
 
 function reset() {
 
     x = 0
 
-    document.querySelector('h1').innerHTML = 'HELLO'
+    document.querySelector('h1').innerHTML = x
+
+    localStorage.setItem('x', x)
 
 }
