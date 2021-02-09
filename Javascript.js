@@ -1,3 +1,4 @@
+
 if (!localStorage.getItem('x')){
     localStorage.setItem('x', 0)
 }
@@ -10,11 +11,39 @@ document.addEventListener('DOMContentLoaded', function (){
 
     document.getElementById('add').onclick = add;
 
-    document.getElementById('reset').onclick = reset;
+    document.getElementById('superadd').onclick = superadd;
+
+    document.getElementById('stopsuperadd').onclick = stopsuperadd;
 
     document.getElementById('subtract').onclick = subtract;
 
+    document.getElementById('reset').onclick = reset;
+
 })
+
+let interval;
+
+function superadd(){
+
+    interval = setInterval(duperadd, 1)
+    
+}
+
+function stopsuperadd (){
+
+    clearInterval(interval)
+
+}
+
+function duperadd(){
+
+    x++
+
+    document.querySelector('h1').innerHTML = x
+
+    localStorage.setItem('x', x)
+
+}
 
 function add() {
 
